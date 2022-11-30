@@ -6,71 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="resume, frontend, html, css, psk" />
     <meta name="description" content="Резюме Пугач С.К." />
+    <link rel="stylesheet" href="index.css" />
     <title>PSK</title>
   </head>
-  <>
-    <img
-      src="https://sun3-12.userapi.com/impf/c846020/v846020501/deebf/A9t-4mR90wI.jpg?size=2048x1536&quality=96&sign=b69dc242b640367c54bea1257371a269&type=album"
-      alt="автарка" style="width: 200px;"
-    />
-    <h1>Пугач Семён</h1>
-    <p>Я строитель, решивший стать <em>frontend-разработчиком</em>.</p>
-    <h4>Список социальных сетей:</h4>
-    <a href=""target="_blank">Instagram</a><a> |</a>
-    <a href=""target="_blank">Telegram</a><a> |</a>
-    <a href=""target="_blank">Whatsup</a>
-    <h4>Мои хобби</h4>
-    <ol>
-        <li>Путешествия</li>
-        <li>Качалка</li>
-        <li>Программирование</li>
-        <li>Сноуборд</li>
-    </ol>
-    <h4>Опыт работы</h4>
-    <table>
-        <thead>
-            <tr>
-                <th>Компания</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>УММ2</td>
-                <td>Мастер</td>
-                <td>2016-2019</td>
-            </tr>
-            <tr>
-                <td>Семеновский рудник</td>
-                <td>Начальник ОКС</td>
-                <td>2019-2022</td>
-            </tr>
-            <tr>
-                <td>ПГМИ</td>
-                <td>Руководитель проектов</td>
-                <td>2022-н.в.</td>
-            </tr>
-        </tbody>
-    </table>
+  <body>
+<div class="container">
+    <div class="head">
+
+        <div class="ava">
+        <img
+        src="https://sun3-12.userapi.com/impf/c846020/v846020501/deebf/A9t-4mR90wI.jpg?size=2048x1536&quality=96&sign=b69dc242b640367c54bea1257371a269&type=album"
+        alt="автарка" class="avatar"
+        />  
+        </div>
+
+        <div class="info">
+            <h1>Пугач Семён</h1>
+            <p>Я строитель, решивший стать <em>frontend-разработчиком</em>.</p>
+            <h4>Список социальных сетей:</h4>
+            <a href=""target="_blank" class="link">Instagram</a><a> |</a>
+            <a href=""target="_blank" class="link">Telegram</a><a> |</a>
+            <a href=""target="_blank" class="link">Whatsup</a>
+        </div>
+    </div>    
+    <div class="card bc-yellow list">
+        <h4>Мои хобби</h4>
+        <ol>
+            <li>Путешествия</li>
+            <li>Качалка</li>
+            <li>Программирование</li>
+            <li>Сноуборд</li>
+        </ol>
+    </div>
+    <div class="card bc-green">
+        <h4>Опыт работы</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Компания</th>
+                    <th>Должность</th>
+                    <th>Год</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>УММ2</td>
+                    <td>Мастер</td>
+                    <td>2016-2019</td>
+                </tr>
+                <tr>
+                    <td>Семеновский рудник</td>
+                    <td>Начальник ОКС</td>
+                    <td>2019-2022</td>
+                </tr>
+                <tr>
+                    <td>ПГМИ</td>
+                    <td>Руководитель проектов</td>
+                    <td>2022-н.в.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     <hr />
-    <h4>Отправьте мне сообщение</h4>
-    <div>
-        <label for="name">Ваше имя:</label>
-        <input type="name" placeholder="Введите имя" id="name">  
-    </div>
+    <div class="card bc-red foot" >
+        <h4>Отправьте мне сообщение</h4>
+        <div class="form-row">
+        <div class="form">
+            <label for="name">Ваше имя:</label>
+            <input type="name" placeholder="Введите имя" id="name">  
+        </div>
 
-    <div>
-        <label for="email">Ваш email:</label>
-        <input type="email" placeholder="Введите email" id="email"> 
+        <div class="form">
+            <label for="email">Ваш email:</label>
+            <input type="email" placeholder="Введите email" id="email"> 
+        </div>
+        </div>
+        <div class="form">
+            <label for="message">Ваше сообщение:</label>
+            <br>
+            <textarea id="message" cols="20" rows="5"></textarea>
+            <button type ="submit" class="btn">Отправить!</button>
+        </div>
     </div>
-    <div>
-        <label for="message">Ваше сообщение:</label>
-        <br>
-        <textarea id="message" cols="20" rows="5"></textarea>
-    </div>
-    <button type ="submit">Отправить!</button>
-
+</div>
 
   </body>
 </html>
